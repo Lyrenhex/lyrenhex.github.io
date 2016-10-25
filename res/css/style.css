@@ -1,0 +1,36 @@
+#fsfimg img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+}
+
+.mdl-layout__content {
+    background-color: #F9F9F9;
+}
+
+.center {
+    display: block;
+    margin: 16px auto;
+}
+.wide {
+    width: 90%;
+}
+.wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('plain.png') center no-repeat;
+  background-size: cover;
+}
+
+.mdl-card__supporting-text {
+    width: auto;
+}
+
+.mdl-grid {
+    background-color: #fff;
+}
+
+.blue {
+    color: #2196F3;
+}
