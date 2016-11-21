@@ -23,6 +23,9 @@
   background-size: cover;
   text-shadow: 1px 1px 2px #000000;
 }
+.c {
+    background-position: center !important;
+}
 
 .mdl-card__supporting-text {
     width: auto;
