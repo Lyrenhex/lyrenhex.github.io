@@ -23,6 +23,9 @@
   background-size: cover;
   text-shadow: 1px 1px 2px #000000;
 }
+.c {
+    background-position: center !important;
+}
 
 .mdl-card__supporting-text {
     width: auto;
@@ -34,4 +37,16 @@
 
 .blue {
     color: #2196F3;
+}
+
+.nodec {
+    text-decoration: none;
+}
+
+.hov {
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+}
+.hov:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
