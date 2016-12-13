@@ -1,0 +1,51 @@
+https://keybase.io/scratso
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://damianheaton.com
+  * I am scratso (https://keybase.io/scratso) on keybase.
+  * I have a public key ASC40ynKnVJ72IJ7IIujLnfo1N3UdMVopZvgXH5a5a_D5go
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120b8d329ca9d527bd8827b208ba32e77e8d4ddd474c568a59be05c7e5ae5afc3e60a",
+            "host": "keybase.io",
+            "kid": "0120b8d329ca9d527bd8827b208ba32e77e8d4ddd474c568a59be05c7e5ae5afc3e60a",
+            "uid": "93ad7f970c05ee784d1766fa562f0f19",
+            "username": "scratso"
+        },
+        "service": {
+            "hostname": "damianheaton.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1481665373,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1481665345,
+        "hash": "edb5ef291f57a14e03bf9b98fa097cbfbafea6279fbd450a784fe165593fa0c014ce4dc645334991d3b58723e849d3117cfc9d08741f3463d5482bbd32cf65ef",
+        "seqno": 760166
+    },
+    "prev": "d13fa3900623bb1165a11ae12e6ed9faf3578a31252b958b34f35a66f0756344",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEguNMpyp1Se9iCeyCLoy536NTd1HTFaKWb4Fx+WuWvw+YKp3BheWxvYWTFAvd7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYjhkMzI5Y2E5ZDUyN2JkODgyN2IyMDhiYTMyZTc3ZThkNGRkZDQ3NGM1NjhhNTliZTA1YzdlNWFlNWFmYzNlNjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYjhkMzI5Y2E5ZDUyN2JkODgyN2IyMDhiYTMyZTc3ZThkNGRkZDQ3NGM1NjhhNTliZTA1YzdlNWFlNWFmYzNlNjBhIiwidWlkIjoiOTNhZDdmOTcwYzA1ZWU3ODRkMTc2NmZhNTYyZjBmMTkiLCJ1c2VybmFtZSI6InNjcmF0c28ifSwic2VydmljZSI6eyJob3N0bmFtZSI6ImRhbWlhbmhlYXRvbi5jb20iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xOCJ9LCJjdGltZSI6MTQ4MTY2NTM3MywiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDgxNjY1MzQ1LCJoYXNoIjoiZWRiNWVmMjkxZjU3YTE0ZTAzYmY5Yjk4ZmEwOTdjYmZiYWZlYTYyNzlmYmQ0NTBhNzg0ZmUxNjU1OTNmYTBjMDE0Y2U0ZGM2NDUzMzQ5OTFkM2I1ODcyM2U4NDlkMzExN2NmYzlkMDg3NDFmMzQ2M2Q1NDgyYmJkMzJjZjY1ZWYiLCJzZXFubyI6NzYwMTY2fSwicHJldiI6ImQxM2ZhMzkwMDYyM2JiMTE2NWExMWFlMTJlNmVkOWZhZjM1NzhhMzEyNTJiOTU4YjM0ZjM1YTY2ZjA3NTYzNDQiLCJzZXFubyI6NywidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAFtRkDj4wLeZ+cxJEJkG+ybJ5OG4ndvVzSRNQns9lPJbjMYIurf0sH/n7bQxaegl4TDp6Xqxm78Ed9A6/bQVYFqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQg0AxSk1971TvlZn04PZml17tLFxvpqyAJV7bbtWsaafqjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/scratso
