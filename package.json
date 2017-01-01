@@ -1,0 +1,22 @@
+{
+  "name": "scratso.github.io",
+  "version": "1.0.0",
+  "description": "My personal website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scratso/scratso.github.io.git"
+  },
+  "author": "Damian Heaton <dh64784@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Scratso/scratso.github.io/issues"
+  },
+  "homepage": "https://github.com/Scratso/scratso.github.io#readme",
+  "dependencies": {
+    "material-components-web": "^0.1.1"
+  }
+}
