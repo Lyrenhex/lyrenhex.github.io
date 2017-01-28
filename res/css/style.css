@@ -1,52 +1,182 @@
-#fsfimg img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 22px;
-}
-
-.mdl-layout__content {
-    background-color: #F9F9F9;
-}
-
-.center {
-    display: block;
-    margin: 16px auto;
-}
-.wide {
-    width: 90%;
-}
-.wide > .mdl-card__title {
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #111;
   color: #fff;
-  height: 176px;
-  background: url('plain.png') center top no-repeat;
-  background-size: cover;
-  text-shadow: 1px 1px 2px #000000;
-}
-.c {
-    background-position: center !important;
 }
 
-.mdl-card__supporting-text {
-    width: auto;
+a:link, a:visited {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s all ease-in-out;
+}
+a:hover {
+  color: lightyellow;
+  transition: 0.2s all ease-in-out;
 }
 
-.mdl-card__media {
-    background-color: #fff;
+h1 {
+  position: relative;
+  color: gold;
+  font-size: 24pt;
+  padding: 32px 16px;
+  text-shadow: 1px 1px 2px #000;
+}
+button {
+  display: none;
+}
+.modal {
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #222;
+  border: 1px solid gold;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  margin-bottom: 16px;
+  padding: 5px;
+}
+.modal div {
+  display: none;
+}
+.modal h2 {
+  padding: 8px 16px;
+  color: gold;
+}
+.modal p {
+  padding: 8px 16px;
+}
+.card {
+  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #222;
+  border: 1px solid gold;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  margin-bottom: 16px;
+  padding: 5px;
+}
+.card h3 {
+  color: gold;
+}
+.card h4 {
+  color: lightyellow;
 }
 
-.blue {
-    color: #2196F3;
+hr {
+  border: none;
+  border-top: 1px solid gold;
 }
 
-.nodec {
-    text-decoration: none;
+body.dk {
+  overflow: hidden;
+}
+.dk h1 {
+  position: fixed;
+  font-size: 60pt;
+  top: calc(50% - 96px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  width: 70%;
+  text-align: center;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav-top, .nav-bottom {
+  max-width: 100vw;
+}
+.nav-top {
+  top: 5px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-left, .nav-right {
+  position: absolute;
+  height: calc(100vh - 118px);
+  top: 64px;
+}
+.nav-left {
+  left: 5px;
+}
+.nav-right {
+  right: 5px;
+}
+.dk .nav-right button {
+  width: 200px;
+}
+.dk .nav-left button {
+  width: 200px;
+}
+.nav-bottom {
+  display: none;
+}
+.dk .nav-bottom {
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  width: calc(100vw - 10px);
+}
+.dk button {
+  color: black;
+  background-color: gold;
+  border: none;
+  font-size: 32pt;
+  display: block;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+  border: 2px solid #111;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.dk .nav-top button, .dk .nav-bottom button {
+  display: inline-block;
+  margin-right: 16px;
+}
+.dk .nav-left button, .dk .nav-right button {
+  margin-top: 32px;
+}
+.close {
+  position: absolute;
+  font-size: 21pt;
+  top: 0;
+  right: 0;
+}
+.dk button:hover {
+  border: 2px solid lightyellow;
+}
+.dk button:active {
+  background-color: lightyellow;
 }
 
-.hov {
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    cursor: pointer;
+.dk .modal {
+  position: fixed;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222;
+  color: #fff;
+  border: 1px solid gold;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  display: none;
+  overflow: auto;
 }
-.hov:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+.dk .modal div {
+  display: block;
+  position: relative;
+}
+button:focus {
+  outline: none;
 }
