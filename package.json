@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Scratso/scratso.github.io#readme",
   "dependencies": {
-    "material-components-web": "^0.1.1"
+    "material-components-web": "^0.3.0"
   }
 }
