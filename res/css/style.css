@@ -65,6 +65,29 @@ button {
   margin-bottom: 16px;
   padding: 5px;
 }
+.grid {
+  display: flex !important;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  align-content: space-around;
+}
+.small {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 10px;
+  transition: 0.5s all linear;
+}
+.small:hover {
+  width: 175px;
+  height: 175px;
+  font-size: 120%;
+  transition: 0.5s all linear;
+  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+}
 .card h3 {
   color: gold;
 }
