@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="transclusion" href="res/transcludes/meta.html" />
+    <title>Damian Heaton :: Legal information</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXS5529"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <h1>Legal information</h1>
+    <div class="nav nav-top">
+      <a href="/"><button>Home</button></a>
+      <button onclick="showModal('librejs')">GNU LibreJS</button>
+      <button onclick="showModal('source')">Website Source</button>
+    </div>
+    <div class="nav nav-bottom">
+      <div class="card">
+        <p>This website was built with care by Damian Heaton, author of many other projects like <a href="https://github.com/Scratso/Compound">Compound</a>, which powers the development of this website.
+      </div>
+    </div>
+
+    <div class="modal" id="librejs">
+      <div>
+        <button class="close" onclick="hideModal('librejs')">X</button>
+      </div>
+      <link rel="transclusion" href="res/transcludes/librejs.html" />
+    </div>
+    <div class="modal" id="source">
+      <div>
+        <button class="close" onclick="hideModal('source')">X</button>
+      </div>
+      <link rel="transclusion" href="res/transcludes/source.html" />
+    </div>
+
+    <noscript id="deferred-styles">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+    <script async src="res/js/jquery-3.1.1.min.js"></script>
+    <script async src="res/js/script.js"></script>
+  </body>
+</html>
