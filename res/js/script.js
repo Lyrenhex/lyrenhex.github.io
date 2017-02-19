@@ -6,9 +6,15 @@ function start() {
       if($(window).width() >= 1000) {
         dk = true;
         $(document.body).addClass("dk");
+        document.getElementsByName("itch").forEach((element, index) => {
+          element.style.width = 552;
+        });
       }else{
         dk = false;
         $(document.body).removeClass("dk");
+        document.getElementsByName("itch").forEach((element, index) => {
+          element.style.width = 208;
+        });
       }
     });
 
