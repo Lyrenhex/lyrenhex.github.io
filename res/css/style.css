@@ -72,6 +72,7 @@ button {
   width: 100%;
   margin: auto;
   align-content: space-around;
+  justify-content: center;
 }
 .small {
   width: 150px;
