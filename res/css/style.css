@@ -104,8 +104,8 @@ body.dk {
 }
 .nav-left, .nav-right {
   position: absolute;
-  height: calc(100vh - 118px);
-  top: 64px;
+  top: calc(50% - 25px);
+  transform: translateY(-50%);
 }
 .nav-left {
   left: 5px;
