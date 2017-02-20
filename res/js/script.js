@@ -28,6 +28,9 @@ function start() {
           h1.style.top = ($(window).height() / 2 - 103.5) + (e.pageY - ($(window).height() / 2)) / 50 + "px";
         }
       });
+      var hash = window.location.hash.substring(1);
+      if (hash !== "")
+        showModal(hash);
     });
   }catch(e){
     setTimeout(start, 1);
@@ -39,8 +42,10 @@ start();
 function showModal(id){
   var div = document.getElementById(id);
   div.style.display = "block";
+  window.location.hash = id;
 }
 function hideModal(id){
   var div = document.getElementById(id);
   div.style.display = "none";
+  window.location.hash = "";
 }
