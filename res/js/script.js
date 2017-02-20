@@ -41,11 +41,11 @@ start();
 
 function showModal(id){
   var div = document.getElementById(id);
-  div.style.display = "block";
+  div.classList.add("show");
   window.location.hash = id;
 }
 function hideModal(id){
   var div = document.getElementById(id);
-  div.style.display = "none";
+  div.classList.remove("show");
   window.location.hash = "";
 }
