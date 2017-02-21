@@ -81,6 +81,10 @@ button {
 .modal p {
   padding: 8px 16px;
 }
+.menus {
+  display: none;
+}
+
 table {
   width: 100%;
   background-color: #222;
@@ -202,7 +206,6 @@ body.dk {
   border: none;
   font-size: 32pt;
   display: block;
-  margin-bottom: 32px;
   box-sizing: border-box;
   border: 2px solid gold;
   border-radius: 2px;
@@ -253,5 +256,39 @@ body.dk {
 }
 button:focus {
   outline: none;
+}
+
+.dk .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dk .menu {
+  position: absolute;
+  background-color: gold;
+  box-sizing: border-box;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s linear;
+}
+.dk .menu.shown {
+  max-height: 200px;
+  border: 1px solid gold;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+}
+.dk .menu button {
+  border: none;
+  border-radius: none;
+  margin-bottom: 1px;
+  background-color: #222;
+  color: #fff;
+  width: 100%;
+  text-align: left;
+  transition: 0.1s linear;
+}
+.dk .menu button:hover {
+  background-color: gold;
+  color: black;
 }
 </style>

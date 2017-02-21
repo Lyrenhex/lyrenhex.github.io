@@ -49,3 +49,8 @@ function hideModal(id){
   div.classList.remove("show");
   window.location.hash = "";
 }
+
+function menu(id) {
+  var menu = document.getElementById(id);
+  menu.classList.toggle("shown");
+}
