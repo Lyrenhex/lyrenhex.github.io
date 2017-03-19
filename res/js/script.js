@@ -1,3 +1,13 @@
+const STRINGS = [
+  "Hello",
+  "I'm Damian Heaton",
+  "a Software Engineer",
+  "a Web Developer",
+  "a Privacy Advocate",
+  "a Mild Progressive"
+]
+var string = -1;
+
 var dk = false;
 
 function start() {
@@ -28,9 +38,15 @@ function start() {
           h1.style.top = ($(window).height() / 2 - 103.5) + (e.pageY - ($(window).height() / 2)) / 50 + "px";
         }
       });
+
       var hash = window.location.hash.substring(1);
       if (hash !== "")
         showModal(hash);
+
+      if (dk) {
+        changeText();
+        setInterval(changeText, 5000);
+      }
     });
   }catch(e){
     setTimeout(start, 1);
@@ -53,4 +69,21 @@ function hideModal(id){
 function menu(id) {
   var menu = document.getElementById(id);
   menu.classList.toggle("shown");
+  function hideborder() {
+    menu.style.border = "none";
+  }
+  if (menu.classList.contains("shown"))
+    menu.style.border = "1px solid gold";
+  else
+    setTimeout(hideborder, 500);
+}
+
+function changeText() {
+  if (string === STRINGS.length - 1)
+    string = 0;
+  else
+    string ++;
+  $("h1").fadeOut(function () {
+    $(this).text(STRINGS[string]);
+  }).fadeIn();
 }
