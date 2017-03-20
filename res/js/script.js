@@ -13,7 +13,7 @@ var dk = false;
 function start() {
   try {
     $(window).resize(() => {
-      if($(window).width() >= 1000) {
+      if($(window).width() >= 1040) {
         dk = true;
         $(document.body).addClass("dk");
         document.getElementsByName("itch").forEach((element, index) => {
@@ -76,6 +76,12 @@ function menu(id) {
     menu.style.border = "1px solid gold";
   else
     setTimeout(hideborder, 500);
+}
+function toggleNav() {
+  var nav = document.getElementById("mobnav");
+  nav.classList.toggle("inscreen");
+  var backdrop = document.getElementById("mobnav-back");
+  backdrop.classList.toggle("inscreen");
 }
 
 function changeText() {

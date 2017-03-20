@@ -32,6 +32,7 @@ for the JavaScript code in this page.
   background-color: #111;
   color: #fff;
   font-size: 125%;
+  margin-top: 65px;
 }
 
 a:link, a:visited {
@@ -83,6 +84,100 @@ button {
 }
 .menus {
   display: none;
+}
+
+.mobile {
+  display: block;
+}
+.desktop {
+  display: none;
+}
+.mobile--nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #222;
+  border-bottom: 1px solid gold;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+.mobile--nav h1 {
+  padding: 5px;
+  margin: 0;
+  text-shadow: none;
+}
+.mobile--nav button {
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  color: lightgray;
+  background-color: #444;
+  display: block;
+  font-size: 32px;
+  border: none;
+}
+.mobile--nav button:hover {
+  background-color: #555;
+}
+
+.mobile--nav-back {
+  display: none;
+}
+.mobile--nav-back.inscreen {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.mobile--nav-toggle {
+  display: block;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: calc(100% + 20px);
+  width: 75%;
+  max-width: 280px;
+  background-color: #222;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: -10px 0 20px 0 rgba(0, 0, 0, 0.75);
+  transition: all 0.4s ease-out;
+  z-index: 2;
+}
+.mobile--nav-toggle.inscreen {
+  left: 100%;
+  transform: translateX(-100%);
+  transition: all 0.4s ease-in;
+}
+.mobile--nav-toggle h1 {
+  padding: 10px;
+  margin: 16px 0;
+  text-shadow: none;
+}
+.mobile--nav-toggle h2 {
+  font-size: 18pt;
+  padding: 10px;
+  margin-bottom: 7px;
+}
+.mobile--nav-toggle a {
+  width: calc(100% - 20px);
+  display: block;
+  margin: auto;
+  background-color: #222;
+  padding: 10px;
+  margin-bottom: 2px;
+}
+.mobile--nav-toggle a:hover {
+  background-color: #333;
 }
 
 table {
@@ -150,6 +245,13 @@ hr {
 
 body.dk {
   overflow: hidden;
+  margin-top: auto;
+}
+.dk .mobile {
+  display: none;
+}
+.dk .desktop {
+  display: block;
 }
 .dk h1 {
   position: fixed;
@@ -169,7 +271,7 @@ body.dk {
 }
 .nav-top {
   top: 5px;
-  display: table;
+  display: table !important;
   margin-left: auto;
   margin-right: auto;
 }

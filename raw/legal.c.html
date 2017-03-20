@@ -15,6 +15,7 @@
       <a href="/"><button>Home</button></a>
       <button onclick="showModal('librejs')">GNU LibreJS</button>
       <button onclick="showModal('source')">Website Source</button>
+      <button onclick="showModal('priv')">Privacy Policy</button>
     </div>
     <div class="nav nav-bottom">
       <div class="card">
@@ -33,6 +34,12 @@
         <button class="close" onclick="hideModal('source')">X</button>
       </div>
       <link rel="transclusion" href="res/transcludes/source.html" />
+    </div>
+    <div class="modal" id="priv">
+      <div>
+        <button class="close" onclick="hideModal('priv')">X</button>
+      </div>
+      <link rel="transclusion" href="res/transcludes/privacy.html" />
     </div>
 
     <noscript id="deferred-styles">

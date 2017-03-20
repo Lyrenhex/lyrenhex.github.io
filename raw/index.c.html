@@ -9,8 +9,34 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <h1>Damian Heaton</h1>
-    <div class="nav nav-top">
+    <div class="desktop">
+      <h1>Damian Heaton</h1>
+    </div>
+
+    <div class="mobile mobile--nav">
+      <h1>Damian Heaton</h1>
+      <button onclick="toggleNav()">&#9776;</button>
+    </div>
+
+    <div class="mobile--nav-back" id="mobnav-back" onclick="toggleNav()"></div>
+    <div class="mobile mobile--nav-toggle" id="mobnav">
+      <h1>Damian Heaton</h1>
+      <a href="#about">About me</a>
+      <a href="#projects">My projects</a>
+      <a href="#contact">Contact me</a>
+      <h2>Opinions</h2>
+      <a href="#freedom">Freedom</a>
+      <a href="#ukpol">UK Politics</a>
+      <a href="#uspol">US Politics</a>
+      <h2>External sites</h2>
+      <a href="https://medium.com/@scratso">My blog</a>
+      <a href="https://twitter.com/Scratso">Twitter</a>
+      <a href="https://plus.google.com/+DamianScratsoHeaton">Google+</a>
+      <a href="https://keybase.io/scratso">Keybase</a>
+      <a href="https://github.com/Scratso">GitHub</a>
+    </div>
+
+    <div class="desktop nav nav-top">
       <button onclick="showModal('about')">About me</button>
       <div class="dropdown">
         <button onclick="menu('opinions')">My opinions &#8645;</button>
@@ -23,19 +49,19 @@
       <button onclick="showModal('projects')">My projects</button>
       <button onclick="showModal('contact')">Contact me</button>
     </div>
-    <div class="nav nav-left">
+    <div class="desktop nav nav-left">
       <a href="https://medium.com/@scratso"><button>My blog</button></a>
       <a href="https://twitter.com/Scratso"><button>Twitter</button></a>
       <a href="https://plus.google.com/+DamianScratsoHeaton"><button>Google+</button></a>
       <button onclick="alert('scratso@joindiaspora.com')">Diaspora*</button>
     </div>
-    <div class="nav nav-right">
+    <div class="desktop nav nav-right">
       <a href="https://keybase.io/scratso"><button>Keybase</button></a>
       <a href="https://github.com/Scratso"><button>GitHub</button></a>
       <a href="https://stackoverflow.com/users/4897375/scratso"><button>Stack Overflow</button></a>
       <a href="https://wilt.fm/profile/Scratso"><button>WILT.FM</button></a>
     </div>
-    <div class="nav nav-bottom">
+    <div class="desktop nav nav-bottom">
       <div class="card">
         <p>This website was built with care by Damian Heaton, author of many other projects like <a href="https://github.com/Scratso/Compound">Compound</a>, which powers the development of this website. <a href="legal.html" data-jslicense="1">Legal stuff</a></p>
       </div>

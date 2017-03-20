@@ -33,6 +33,7 @@ for the JavaScript code in this page.
   background-color: #111;
   color: #fff;
   font-size: 125%;
+  margin-top: 65px;
 }
 
 a:link, a:visited {
@@ -84,6 +85,100 @@ button {
 }
 .menus {
   display: none;
+}
+
+.mobile {
+  display: block;
+}
+.desktop {
+  display: none;
+}
+.mobile--nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #222;
+  border-bottom: 1px solid gold;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+.mobile--nav h1 {
+  padding: 5px;
+  margin: 0;
+  text-shadow: none;
+}
+.mobile--nav button {
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  color: lightgray;
+  background-color: #444;
+  display: block;
+  font-size: 32px;
+  border: none;
+}
+.mobile--nav button:hover {
+  background-color: #555;
+}
+
+.mobile--nav-back {
+  display: none;
+}
+.mobile--nav-back.inscreen {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.mobile--nav-toggle {
+  display: block;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  top: 0;
+  left: calc(100% + 20px);
+  width: 75%;
+  max-width: 280px;
+  background-color: #222;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: -10px 0 20px 0 rgba(0, 0, 0, 0.75);
+  transition: all 0.4s ease-out;
+  z-index: 2;
+}
+.mobile--nav-toggle.inscreen {
+  left: 100%;
+  transform: translateX(-100%);
+  transition: all 0.4s ease-in;
+}
+.mobile--nav-toggle h1 {
+  padding: 10px;
+  margin: 16px 0;
+  text-shadow: none;
+}
+.mobile--nav-toggle h2 {
+  font-size: 18pt;
+  padding: 10px;
+  margin-bottom: 7px;
+}
+.mobile--nav-toggle a {
+  width: calc(100% - 20px);
+  display: block;
+  margin: auto;
+  background-color: #222;
+  padding: 10px;
+  margin-bottom: 2px;
+}
+.mobile--nav-toggle a:hover {
+  background-color: #333;
 }
 
 table {
@@ -151,6 +246,13 @@ hr {
 
 body.dk {
   overflow: hidden;
+  margin-top: auto;
+}
+.dk .mobile {
+  display: none;
+}
+.dk .desktop {
+  display: block;
 }
 .dk h1 {
   position: fixed;
@@ -170,7 +272,7 @@ body.dk {
 }
 .nav-top {
   top: 5px;
-  display: table;
+  display: table !important;
   margin-left: auto;
   margin-right: auto;
 }
@@ -292,7 +394,7 @@ button:focus {
   background-color: gold;
   color: black;
 }
-</style><title>Damian Heaton :: Legal information</title></head><body><!-- Google Tag Manager (noscript) --><noscript><iframe height=0 src=https://www.googletagmanager.com/ns.html?id=GTM-TXS5529 style=display:none;visibility:hidden width=0></iframe></noscript><!-- End Google Tag Manager (noscript) --><h1>Legal information</h1><div class="nav nav-top"><a href=/ ><button>Home</button></a><button onclick="showModal('librejs')">GNU LibreJS</button><button onclick="showModal('source')">Website Source</button></div><div class="nav nav-bottom"><div class=card><p>This website was built with care by Damian Heaton, author of many other projects like <a href=https://github.com/Scratso/Compound>Compound</a>, which powers the development of this website. </p></div></div><div class=modal id=librejs><div><button class=close onclick="hideModal('librejs')">X</button></div><h2>GNU LibreJS Information</h2><table id=jslicense-labels1><tr><th>JavaScript file</th><th>License</th><th>Source code</th></tr><tr><td><a href=/res/js/jquery-3.1.1.min.js>jquery-3.1.1.min.js</a></td><td><a href=http://www.jclark.com/xml/copying.txt>Expat</a></td><td><a href=https://code.jquery.com/jquery-3.1.1.js>https://code.jquery.com/jquery-3.1.1.js</a></td></tr><tr><td><a href=/res/js/script.js>script.js</a></td><td><a href=http://www.gnu.org/licenses/gpl-3.0.html>GNU-GPL-3.0-or-later</a></td><td><a href=https://github.com/Scratso/scratso.github.io/blob/master/res/js/script.js>https://github.com/Scratso/scratso.github.io/blob/master/res/js/script.js</a></td></tr></table></div><div class=modal id=source><div><button class=close onclick="hideModal('source')">X</button></div><h2>Website legal</h2><div class=card><h3>License information</h3><p>This website, its source code, content, and any code snippets that may be provided within this website is licensed under the GNU General Public License verion 3, or at your option, any later version (but <b>not</b> earlier, which are incompatible with the GNU GPL v3). The full text for this license is available <a href=http://gnu.org/licenses/gpl-3.0.html>here</a>, as provided by the GNU Project.</p><p>This website is free software: you can redistribute it and / or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the license, or (at your option) any later version.</p><p>This website is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p><p>Should one need to contact me (Damian Heaton, or also known as “Scratso”, the owner, maintainer, and administrator of this website), I may be contacted via any of the methods described in the Contact section on <a href=/ >my homepage</a>.</p><p>Some non-free JavaScript code is executed for analytical purposes, using Google Tag Manager and Google Analytics, sequentially. No identifying data is transmitted, however, if this use is disagreed with, Adblock usually blocks Google Tag Manager (from my own testing), or you may disable JavaScript entirely for a degraded browsing experience.</p><p>The source code for this website is available for free <a href=https://github.com/Scratso/scratso.github.io>here, on GitHub</a>.</p></div><div class=card><h3>Technical information</h3><p>This website is programmed by hand, using only Compound for a 3rd Party Tool. This process is done to simplify and speed up website development, allowing for the site to be broken up in the source into many smaller files, before being stitched up into one large, minified production file on release.</p><p>The website has also been created following Google's “Mobile First” website development guidelines, and is then gracefully upgraded via the use of free JavaScript to create the desktop edition of the site. This upgrade occurs when the JavaScript event handler, which is attached to the window resize event, detects that the window's width is greater than, or equal to, 1,000 pixels. Therefore, should JavaScript be disabled, a mobile edition of the site will be served regardless of screen size. This edition of the site removes modals, displaying all information sequentially in a rather long webpage.</p><p>For examples of how this website was accomplished, please feel free to check out the source code (see above link). Should you wish for a website like this one for yourself, please also feel free to contact me with an odd-job request, which I would likely accept and create a similarly striking, and quick, site. For speed examples, this site (at time of writing) scores 99% for mobile friendliness, 91% for mobile speed, and 94% for desktop speed, based on results provided by <a href=https://testmysite.withgoogle.com>Test My Site With Google</a>.</p></div></div><noscript id=deferred-styles><link href=https://fonts.googleapis.com/css?family=Roboto rel=stylesheet></noscript><script>
+</style><title>Damian Heaton :: Legal information</title></head><body><!-- Google Tag Manager (noscript) --><noscript><iframe height=0 src=https://www.googletagmanager.com/ns.html?id=GTM-TXS5529 style=display:none;visibility:hidden width=0></iframe></noscript><!-- End Google Tag Manager (noscript) --><h1>Legal information</h1><div class="nav nav-top"><a href=/ ><button>Home</button></a><button onclick="showModal('librejs')">GNU LibreJS</button><button onclick="showModal('source')">Website Source</button><button onclick="showModal('priv')">Privacy Policy</button></div><div class="nav nav-bottom"><div class=card><p>This website was built with care by Damian Heaton, author of many other projects like <a href=https://github.com/Scratso/Compound>Compound</a>, which powers the development of this website. </p></div></div><div class=modal id=librejs><div><button class=close onclick="hideModal('librejs')">X</button></div><h2>GNU LibreJS Information</h2><table id=jslicense-labels1><tr><th>JavaScript file</th><th>License</th><th>Source code</th></tr><tr><td><a href=/res/js/jquery-3.1.1.min.js>jquery-3.1.1.min.js</a></td><td><a href=http://www.jclark.com/xml/copying.txt>Expat</a></td><td><a href=https://code.jquery.com/jquery-3.1.1.js>https://code.jquery.com/jquery-3.1.1.js</a></td></tr><tr><td><a href=/res/js/script.js>script.js</a></td><td><a href=http://www.gnu.org/licenses/gpl-3.0.html>GNU-GPL-3.0-or-later</a></td><td><a href=https://github.com/Scratso/scratso.github.io/blob/master/res/js/script.js>https://github.com/Scratso/scratso.github.io/blob/master/res/js/script.js</a></td></tr></table></div><div class=modal id=source><div><button class=close onclick="hideModal('source')">X</button></div><h2>Website legal</h2><div class=card><h3>License information</h3><p>This website, its source code, content, and any code snippets that may be provided within this website is licensed under the GNU General Public License verion 3, or at your option, any later version (but <b>not</b> earlier, which are incompatible with the GNU GPL v3). The full text for this license is available <a href=http://gnu.org/licenses/gpl-3.0.html>here</a>, as provided by the GNU Project.</p><p>This website is free software: you can redistribute it and / or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the license, or (at your option) any later version.</p><p>This website is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p><p>Should one need to contact me (Damian Heaton, or also known as “Scratso”, the owner, maintainer, and administrator of this website), I may be contacted via any of the methods described in the Contact section on <a href=/ >my homepage</a>.</p><p>Some non-free JavaScript code is executed for analytical purposes, using Google Tag Manager and Google Analytics, sequentially. No identifying data is transmitted, however, if this use is disagreed with, Adblock usually blocks Google Tag Manager (from my own testing), or you may disable JavaScript entirely for a degraded browsing experience.</p><p>The source code for this website is available for free <a href=https://github.com/Scratso/scratso.github.io>here, on GitHub</a>.</p></div><div class=card><h3>Technical information</h3><p>This website is programmed by hand, using only Compound for a 3rd Party Tool. This process is done to simplify and speed up website development, allowing for the site to be broken up in the source into many smaller files, before being stitched up into one large, minified production file on release.</p><p>The website has also been created following Google's “Mobile First” website development guidelines, and is then gracefully upgraded via the use of free JavaScript to create the desktop edition of the site. This upgrade occurs when the JavaScript event handler, which is attached to the window resize event, detects that the window's width is greater than, or equal to, 1,000 pixels. Therefore, should JavaScript be disabled, a mobile edition of the site will be served regardless of screen size. This edition of the site removes modals, displaying all information sequentially in a rather long webpage.</p><p>For examples of how this website was accomplished, please feel free to check out the source code (see above link). Should you wish for a website like this one for yourself, please also feel free to contact me with an odd-job request, which I would likely accept and create a similarly striking, and quick, site. For speed examples, this site (at time of writing) scores 99% for mobile friendliness, 91% for mobile speed, and 94% for desktop speed, based on results provided by <a href=https://testmysite.withgoogle.com>Test My Site With Google</a>.</p></div></div><div class=modal id=priv><div><button class=close onclick="hideModal('priv')">X</button></div><link href=res/transcludes/privacy.html rel=transclusion></div><noscript id=deferred-styles><link href=https://fonts.googleapis.com/css?family=Roboto rel=stylesheet></noscript><script>
       var loadDeferredStyles = function() {
         var addStylesNode = document.getElementById("deferred-styles");
         var replacement = document.createElement("div");
