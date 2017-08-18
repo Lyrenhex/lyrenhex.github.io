@@ -1,409 +1,261 @@
-<!DOCTYPE doctype html>
-<html><head><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TXS5529');</script><!-- End Google Tag Manager --><title>Damian Heaton</title><meta charset=utf-8><meta content="width=device-width, initial-scale=1" name=viewport><meta content="index, follow" name=robots><meta content=max-age=1209600 http-equiv=cache-control><meta content=1209600 http-equiv=expires><meta content=IE=Edge http-equiv=X-UA-Compatible><meta content="Damian Heaton" name=author><meta content="I'm Damian Heaton, a British software and website developer, with a 'mild' passion for politics. I support open values like the Free Software Foundation's Free Software Movement." name=description><meta content="Damian, Heaton, software, web, developer, development, politics, compound, verum, secret" name=keywords><meta content=english name=language><link href=res/img/icon.png rel=icon><meta content="Damian Heaton" property=og:title><meta content=website property=og:type><meta content=https://damianheaton.com/res/img/cover.png property=og:image><meta content="I'm Damian Heaton, a British software and website developer, with a 'mild' passion for politics. I support open values like the Free Software Foundation's Free Software Movement." property=og:description><meta content=summary name=twitter:card><meta content=https://damianheaton.com name=twitter:url><meta content="Damian Heaton" name=twitter:title><meta content="I'm Damian Heaton, a British software and website developer, with a 'mild' passion for politics. I support open values like the Free Software Foundation's Free Software Movement." name=twitter:description><meta content=https://damianheaton.com/res/img/cover.png name=twitter:image><script>
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this page.
+<!DOCTYPE html>
+<html>
 
-Copyright (C) 2017  Damian Heaton
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Damian Heaton</title>
 
-The JavaScript code in this page is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" />
+  <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+  
+  <link rel="icon" href="images/icon.png" />
 
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+  <main>
+
+    <!-- Desktop Layout -->
+    <div id="rowMainDesktop" class="row hide-on-med-and-down">
+
+      <!-- The Bio column -->
+      <div id="bioColumn" class="col m4">
+
+        <img id="profileImage" src="images/icon.png" class="circle responsive-img" />
+        <h4 class="center-align white-text">Damian Heaton</h4>
+        <h2 id="description" class="center-align white-text">Web and software developer, musicophile, student.</h2>
 
 
-@licend  The above is the entire license notice
-for the JavaScript code in this page.
-*/
-</script><style>body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #111;
-  color: #fff;
-  font-size: 125%;
-  margin-top: 65px;
-}
+        <div id="linkSection">
+          <section class="tab" id="linkSection">
+            <div class="content" id="linkContent">
+              <div class="contacts" id="contacts"><a href="mailto:damian@lyrenhex.me" class="white-text valign-wrapper" target="_blank"><i class="contact_icon mdi mdi-email"></i>&nbsp; Mail</a></div>
+              <div class="contacts" id="contacts"><a href="https://twitter.com/lyrenhex/" class="white-text valign-wrapper"><i class="contact_icon mdi mdi-twitter"></i>&nbsp; Twitter</a></div>
+              <div class="contacts" id="contacts"><a href="https://blog.lyrenhex.me" class="white-text valign-wrapper" target="_blank"><i class="contact_icon mdi mdi-tumblr"></i>&nbsp; Blog</a></div>
+              <div class="contacts" id="contacts"><a href="https://google.com/+DamianHeaton" class="white-text valign-wrapper" target="_blank"><i class="contact_icon mdi mdi-google-plus"></i>&nbsp; Google+</a></div>
+              <!-- You can add more links! -->
+            </div>
+          </section>
+        </div>
+      </div>
 
-a:link, a:visited {
-  color: gold;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.2s all ease-in-out;
-}
-a:hover {
-  color: lightyellow;
-  transition: 0.2s all ease-in-out;
-}
+      <!-- The Works Column -->
+      <div id="worksColumn" class="col m8" style="padding-left: 5%; padding-right: 5%">
 
-h1 {
-  position: relative;
-  color: gold;
-  font-size: 24pt;
-  padding: 32px 16px;
-  text-shadow: 4px 4px 2px #000;
-}
-button {
-  display: none;
-}
-.modal {
-  width: 95%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #222;
-  border: 1px solid gold;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  margin-bottom: 16px;
-  padding: 5px;
-}
-.modal div {
-  display: none;
-}
-.modal .card {
-  display: block;
-}
-.modal h2 {
-  padding: 8px 16px;
-  color: gold;
-}
-.modal p {
-  padding: 8px 16px;
-}
-.menus {
-  display: none;
-}
+        <div style="margin-left: 8px">
+          <h4 class="white-text" style="margin-top: 0px;">Portfolio</h4>
 
-.mobile {
-  display: block;
-}
-.desktop {
-  display: none;
-}
-.mobile--nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: #222;
-  border-bottom: 1px solid gold;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.75);
-  z-index: 1;
-}
-.mobile--nav h1 {
-  padding: 5px;
-  margin: 0;
-  text-shadow: none;
-}
-.mobile--nav button {
-  position: absolute;
-  right: 7px;
-  top: 5px;
-  color: lightgray;
-  background-color: #444;
-  display: block;
-  font-size: 32px;
-  border: none;
-}
-.mobile--nav button:hover {
-  background-color: #555;
-}
 
-.mobile--nav-back {
-  display: none;
-}
-.mobile--nav-back.inscreen {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-  z-index: 1;
-}
+          <div id="websites" data-target="websites" class="pushpin1">
+            <h5 class="white-text">Software</h5>
+          </div>
+        </div>
 
-.mobile--nav-toggle {
-  display: block;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-  top: 0;
-  left: calc(100% + 20px);
-  width: 75%;
-  max-width: 280px;
-  background-color: #222;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  box-shadow: -10px 0 20px 0 rgba(0, 0, 0, 0.75);
-  transition: all 0.4s ease-out;
-  z-index: 2;
-}
-.mobile--nav-toggle.inscreen {
-  left: 100%;
-  transform: translateX(-100%);
-  transition: all 0.4s ease-in;
-}
-.mobile--nav-toggle h1 {
-  padding: 10px;
-  margin: 16px 0;
-  text-shadow: none;
-}
-.mobile--nav-toggle h2 {
-  font-size: 18pt;
-  padding: 10px;
-  margin-bottom: 7px;
-}
-.mobile--nav-toggle a {
-  width: calc(100% - 20px);
-  display: block;
-  margin: auto;
-  background-color: #222;
-  padding: 10px;
-  margin-bottom: 2px;
-}
-.mobile--nav-toggle a:hover {
-  background-color: #333;
-}
+        <!-- Items -->
+        <div class="row">
+          <div class="col s6">
+            <div class="card">
+              <div class="card-image">
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue lighten-1" href="https://github.com/Lyrenhex/Wilted" target="_blank"><i class="material-icons">open_in_new</i></a>
+              </div>
+              <div class="card-content"><span class="card-title">Wilted</span>
+                <p>A scrobbler written in NodeJS for <a href="https://wilt.fm" target="_blank">What I Listen To</a>, allowing users of the Google Play Music Desktop Player to record their listening history on WILT.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue lighten-1" href="https://verum.damianheaton.com" target="_blank"><i class="material-icons">open_in_new</i></a>
+              </div>
+              <div class="card-content"><span class="card-title">Verum</span>
+                <p>A websocket-based encrypted communication network protocol, featuring: a decentralised server node program; a client-and-server-friendly NPM package; a command-line client. The protocol was based on the OpenPGP key standard.</p>
+              </div>
+            </div>
+          </div>
 
-table {
-  width: 100%;
-  background-color: #222;
-  border: 1px solid gold;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-}
-td {
-  border: 1px solid gold;
-  padding: 5px;
-}
-.card {
-  width: 95%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #222;
-  border: 1px solid gold;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  margin-bottom: 16px;
-  padding: 5px;
-}
-.grid {
-  display: flex !important;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  margin: auto;
-  align-content: space-around;
-  justify-content: center;
-}
-.small {
-  width: 150px;
-  height: 150px;
-  display: block;
-  margin: 10px;
-  transition: 0.25s all linear;
-  text-align: center;
-  padding: 0;
-}
-.small:hover {
-  width: 175px;
-  height: 175px;
-  font-size: 120%;
-  transition: 0.25s all linear;
-  transition-delay: 0.1s;
-  -webkit-transition-delay: 0.1s;
-}
-.card h3 {
-  color: gold;
-}
-.card h4 {
-  color: lightyellow;
-}
+          <div class="col s6">
+            <div class="card">
+              <div class="card-image">
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue lighten-1" href="https://github.com/Lyrenhex/Compound" target="_blank"><i class="material-icons">open_in_new</i></a>
+              </div>
+              <div class="card-content"><span class="card-title">Compound</span>
+                <p>Compound is a command-line based HTML transclusion compiler written in Python, which added transclusion syntax to the base HTML language, before allowing for automated compilation down to standard browser-friendly HTML.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue lighten-1" href="https://ave.damianheaton.com" target="_blank"><i class="material-icons">open_in_new</i></a>
+              </div>
+              <div class="card-content"><span class="card-title">Ave</span>
+                <p>Ave (named after the Latin greeting) is a material design-based IRC client built using Electron. It has support for most common functions of IRC, particularly focused on new members of the IRC community, and valuing GUI over CLI.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-hr {
-  border: none;
-  border-top: 1px solid gold;
-}
+        <div class="row">
 
-body.dk {
-  overflow: hidden;
-  margin-top: auto;
-}
-.dk .mobile {
-  display: none;
-}
-.dk .desktop {
-  display: block;
-}
-.dk h1 {
-  position: fixed;
-  font-size: 60pt;
-  top: calc(50% - 96px);
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0;
-  width: 600px;
-  text-align: center;
-}
-.nav a {
-  text-decoration: none;
-}
-.nav-top, .nav-bottom {
-  max-width: 100vw;
-}
-.nav-top {
-  top: 5px;
-  display: table !important;
-  margin-left: auto;
-  margin-right: auto;
-}
-.nav-left, .nav-right {
-  position: absolute;
-  top: calc(50% - 25px);
-  transform: translateY(-50%);
-}
-.nav-left {
-  left: 5px;
-}
-.nav-right {
-  right: 5px;
-}
-.dk .nav-right button {
-  width: 200px;
-}
-.dk .nav-left button {
-  width: 200px;
-}
-.nav-bottom {
-  display: none;
-}
-.dk .nav-bottom {
-  display: block;
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-  width: calc(100vw - 10px);
-}
-.dk button {
-  color: black;
-  background-color: gold;
-  border: none;
-  font-size: 32pt;
-  display: block;
-  box-sizing: border-box;
-  border: 2px solid gold;
-  border-radius: 2px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-.dk .nav-top button, .dk .nav-bottom button {
-  display: inline-block;
-  margin-right: 16px;
-  height: 60px;
-}
-.dk .nav-left button, .dk .nav-right button {
-  margin-top: 32px;
-}
-.close {
-  position: absolute;
-  font-size: 21pt;
-  top: 0;
-  right: 0;
-}
-.dk button:hover {
-  border: 2px solid lightyellow;
-}
-.dk button:active {
-  background-color: lightyellow;
-}
+          <!--<div class="col s6">
+            <div style="">
+              <div id="websites">
+                <h5 class="white-text">Web Applications</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="images/placeholder.jpeg">
 
-.dk .modal {
-  position: fixed;
-  width: 90%;
-  height: 90%;
-  top: -100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #222;
-  color: #fff;
-  border: 1px solid gold;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  overflow: auto;
-  transition: 0.4s all ease-in-out;
-}
-.dk .modal div {
-  display: block;
-  position: relative;
-}
-.dk .modal.show {
-  top: 50%;
-}
-button:focus {
-  outline: none;
-}
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue lighten-1" href="" target="_blank"><i class="material-icons">open_in_new</i></a>
+              </div>
+              <div class="card-content"><span class="card-title">Title 1</span>
+                <p>Text detailing this accomplishment or work that you completed.</p>
+              </div>
+            </div>
 
-.dk .dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dk .menu {
-  position: absolute;
-  background-color: gold;
-  box-sizing: border-box;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.5s linear;
-}
-.dk .menu.shown {
-  max-height: 200px;
-  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.75);
-}
-.dk .menu button {
-  border: none;
-  border-radius: none;
-  margin-bottom: 1px;
-  background-color: #222;
-  color: #fff;
-  width: 100%;
-  text-align: left;
-  transition: 0.1s linear;
-}
-.dk .menu button:hover {
-  background-color: gold;
-  color: black;
-}
-</style></head><body><!-- Google Tag Manager (noscript) --><noscript><iframe height=0 src=https://www.googletagmanager.com/ns.html?id=GTM-TXS5529 style=display:none;visibility:hidden width=0></iframe></noscript><!-- End Google Tag Manager (noscript) --><div class=desktop><h1>Damian Heaton</h1></div><div class="mobile mobile--nav"><h1>Damian Heaton</h1><button onclick=toggleNav()>☰</button></div><div class=mobile--nav-back id=mobnav-back onclick=toggleNav()></div><div class="mobile mobile--nav-toggle" id=mobnav><h1>Damian Heaton</h1><a href=#about>About me</a><a href=#projects>My projects</a><a href=#contact>Contact me</a><h2>Opinions</h2><a href=#freedom>Freedom</a><a href=#ukpol>UK Politics</a><a href=#uspol>US Politics</a><h2>External sites</h2><a href=https://medium.com/@scratso>My blog</a><a href=https://twitter.com/Scratso>Twitter</a><a href=https://plus.google.com/+DamianScratsoHeaton>Google+</a><a href=https://keybase.io/scratso>Keybase</a><a href=https://github.com/Scratso>GitHub</a></div><div class="desktop nav nav-top"><button onclick="showModal('about')">About me</button><div class=dropdown><button onclick="menu('opinions')">My opinions ⇅</button><div class=menu id=opinions><button onclick="showModal('freedom')">Freedom</button><button onclick="showModal('ukpol')">UK Politics</button><button onclick="showModal('uspol')">US Politics</button></div></div><button onclick="showModal('projects')">My projects</button><button onclick="showModal('contact')">Contact me</button></div><div class="desktop nav nav-left"><a href=https://medium.com/@scratso><button>My blog</button></a><a href=https://twitter.com/Scratso><button>Twitter</button></a><a href=https://plus.google.com/+DamianScratsoHeaton><button>Google+</button></a><button onclick="alert('scratso@joindiaspora.com')">Diaspora*</button></div><div class="desktop nav nav-right"><a href=https://keybase.io/scratso><button>Keybase</button></a><a href=https://github.com/Scratso><button>GitHub</button></a><a href=https://stackoverflow.com/users/4897375/scratso><button>Stack Overflow</button></a><a href=https://wilt.fm/profile/Scratso><button>WILT.FM</button></a></div><div class="desktop nav nav-bottom"><div class=card><p>This website was built with care by Damian Heaton, author of many other projects like <a href=https://github.com/Scratso/Compound>Compound</a>, which powers the development of this website. <a data-jslicense=1 href=legal.html>Legal stuff</a></p></div></div><div class=modal id=about><div><button class=close onclick="hideModal('about')">X</button></div><h2>Hi there!</h2><p>Hi, and welcome! I’m Damian, a software and website developer from England, so I make cool little services and programs (often in my spare time) that you can use <b>for free</b>. I’m also a perfectionist, so I naturally strive to make my work the very best that it possibly can before labelling it as “1.0” and releasing it to the wider public. That said, almost all of my projects are open-source, free software, for I’m an avid supporter of the <a href=https://fsf.org>Free Software Foundation</a>. (In fact fact, this very website is open source and licensed under the GNU General Public License version 3. Neat, eh?)</p><h2>Technologies</h2><p>As a developer, I <b>love</b> the tools that power the web: HTML, CSS, and JavaScript. So, most of my more recent projects have used those technologies, with desktop applications tending to use Node.JS, though I have been known to use Python from time to time (including when I expanded HTML with Transclusions in <a href=https://github.com/Scratso/Compound>Compound</a>).</p><div class=grid><div class="card small"><h3>HTML</h3><h4>★ ★ ★ ★ ★</h4></div><div class="card small"><h3>CSS</h3><h4>★ ★ ★ ★ ★</h4></div><div class="card small"><h3>JavaScript</h3><h4>★ ★ ★ ★</h4></div><div class="card small"><h3>NodeJS</h3><h4>★ ★ ★ ★</h4></div><div class="card small"><h3>Python</h3><h4>★ ★ ★ ★ ★</h4></div><div class="card small"><h3>PHP</h3><h4>★ ★ ★ ★ ★</h4></div><div class="card small"><h3>V. Basic .Net</h3><h4>★ ★ ★ ★ ★</h4></div><div class="card small"><h3>SQL</h3><h4>★ ★ ★</h4></div><div class="card small"><h3>C / C++</h3><h4>★ ★ ★</h4></div><div class="card small"><h3>Java</h3><h4>★ ★</h4></div><div class="card small"><h3>Go</h3><h4>★ ★</h4></div></div><h2>Personal</h2><p>When it comes to me as a person, though, you likely won’t be shocked to learn that I <i>love</i> tea. But, besides that, I’m extremely passionate about my work, and learning most anything. From Classical Latin to Pure Mathematics, there’s very little that I don’t have a blast while learning about.</p><h2>Passions</h2><div class=card><h3>Music</h3><p>Personally, I absolutely <i>love</i> music, usually going for rock, metal, and such over pop. I’m also not a massive rap fan, in general, although one of my absolutely favourite bands is Hollywood Undead... Either way, you can see a decent amount more about my music taste, favourite tracks, et cetera, on my <a href=https://wilt.fm/profile/Scratso>wilt.fm profile</a>.</p><p>And in case you’re wondering about my usual music player, I generally resort to Google Play Music. There are a few reasons for this, really: one is that I adore material design, and Google Play Music (especially the web app) satisfies that massively. However, there's also a convenience aspect; I’m forever switching between desktop and mobile, listening on my desktop computer at home and mobile when I’m out, and I prefer having my music sync seamlessly between the two devices without me having to copy my music over by microSD. For this purpose, Google Play Music also works perfectly. (On desktop, I use <a href=https://googleplaymusicdesktopplayer.com>Google Play Music Desktop Player</a>.)</p></div></div><div class=modal id=projects><div><button class=close onclick="hideModal('projects')">X</button></div><h2>My projects</h2><div class=card><h3>Ave IRC Client</h3><p>Ave is a new, modern IRC client designed inspired by Google's Material Design style specification. Featuring markdown support and a clean, intuitive, commandless user interface, Ave revolutionises the basic framework offered by the IRC protocol.</p><p>With the unique dashboard system also offered by Ave, Ave is able to handle multiple servers, giving you one-click access to every IRC channel you need in your daily lives. Not just that, you don’t need to mess around with the hassle that is HexChat’s channel list system: Ave will keep track of your connected channels throughout your chatting, so that when you next open Ave, you're greeted with the exact same set of channels as when you closed it.</p><p>Ave is freely available under the GNU General Public License <a href=https://github.com/Scratso/Ave>here, on its GitHub page</a>.</p></div><div class=card><h3>Compound</h3><p>Compound is a compiler for extended HTML, which adds the capability for easy transclusion of HTML files into other HTML documents; simple, clean minification; and other bandwidth and development-sanity saving solutions. In fact, Compound powers this website’s development!</p><p>Further features of Compound include the ability to streamline web pages into (almost) <b>entirely self-sufficient</b> pages. What do I mean by that, you say? Webpages are always limited in speed and bandwidth by external calls, be it to script files or CSS files, which are broken off from the primary webpage to make website development. Unfortunately, these external calls also slow down website delivery, increasing the time that a user has to wait for the page to show. The solution? Compound. Compound features the ability to insert external CSS and JavaScript files into the HTML file during compile, meaning that the developers get to work on a nice, broken-up page system, and users get their pages almost instantly: win-win!</p><p>You can check out Compound <a href=https://github.com/Scratso/Compound>on GitHub</a>, or check the documentation <a href=https://github.com/Scratso/Compound/wiki>on the project wiki</a>. </p></div><div class=card><h3>Verum</h3><p>Verum is a decentralised, federated, encrypted chat system for the super secure (or paranoid, if you prefer). Using a Node-based infrastructure, you aren’t naturally locked in to one particular server, and could even spin up your own Node if you so desired.</p><p>Verum, in practice, operates rather similarly to email: you send a message to a user based on a <code>user</code>@<code>node</code> format, which is parsed, and the message is sent to the <code>node</code>. However, Verum is significantly lighter than email, and is built with encryption as its central goal, allowing public keys to be stored in the user’s account rather than requiring an additional key server. This approach greatly simplifies encryption, both to new users and veterans alike.</p><p>Further arguments in favour of Verum are its open-source architecture, with the server code licensed under the GNU Affero General Public License (version 3 or later). The use of the Affero variant requires all Verum Nodes to have their source publicly accessible to users -- and, sure enough, this functionality is built into the "handshake" between the client and server establishing a connection.</p><p>You can <a href=https://verum.damianheaton.com>read more about Verum and its future here</a>, or, if you prefer, I’ve recently released the official <a href=https://verum-cli.damianheaton.com>Verum Command-line App</a> (which works best on GNU / Linux). Don’t scream at me though; a GUI app is coming! </p></div><hr><h2>Things I’ve done in the past</h2><p>Ah, but of course, people don’t <i>just</i> work on things here and now; what about my previous projects or one-off throwaway things <s>that really aren’t worth looking at</s>? Check ’em out!</p><div class=card><h3>Wilted</h3><p>Ever heard of last.fm? No? Well, it’s a music scrobbling site, which means that you listen to music and it gets tracked on there. Sounds cool? It did to over 400 other people too, until last.fm started reaching for money. Not everyone can afford £3 a month for a tracking service, you see, and CBS (the guys behind it) started scoffing at the people using Adblock (... well, not really, but they put interstitials up on <b>every. bloody. page</b>). So, in comes <a href=https://wilt.fm>wilt.fm</a>, a free and open source alternative, which I’m a user of. Unfortunately, I listen to music using <a href=https://googleplaymusicdesktopplayer.com>Google Play Music Desktop Player</a>, which has no scrobbler for wilt.fm. So I made one, and that is Wilted.</p><p>Interested? Wilted’s actually on wilt.fm’s “Getting Started” page! ... Or you can just check it out <a href=https://github.com/Scratso/Wilted>here, on GitHub</a>.</p></div><div class=card><iframe frameborder=0 height=167 name=itch src=https://itch.io/embed/120496?bg_color=000000&fg_color=ffffff&link_color=ffffff&border_color=642d89 style="display: block; margin-left: auto; margin-right: auto;" width=208></iframe></div></div><div class=modal id=contact><div><button class=close onclick="hideModal('contact')">X</button></div><h2>Get in touch!</h2><p>If you want to discuss a project, ask for help, or just feel like having a chat, cool! Just read the info below, pick a chat method, and send me a message -- it's that easy!</p><p>I can be contacted via a variety of means, but I advise the use of the encrypted methods over the plaintext alternatives. That means using Telegram or encrypted email over plaintext email or social media. If you need my PGP key to encrypt an email, you can find it <a href=https://keybase.io/scratso>over on my Keybase account</a>.</p><div class=card><h3>Verum Encrypted Chat</h3><h4>Scratso @ node.verum.damianheaton.com</h4><p>As a side note, the Node I reside on is owned and maintained by myself, through DigitalOcean. It uses the bare-bones <a href=https://github.com/freechat-project/Verum-Server>official Verum Node code</a> to run. Oh, and don't include the spaces when you're messaging me. ;)</p></div><div class=card><h3>Telegram</h3><h4>Scratso</h4></div><div class=card><h3>Email</h3><h4>admin [at] damianheaton [dot] com</h4></div></div><div class=modal id=freedom><div><button class=close onclick="hideModal('freedom')">X</button></div><h2>Some of my opinions: Freedom</h2><p>Personally, I am a strong believer in individual freedom. Obviously, we aren’t all locked up in prison cells all across the country (that would be ridiculous). When I say freedom, I mean the freedom of expression, the freedom to use the things that I spent money on how <i>I</i> want to use them -- even if that means bypassing a bit of DRM.</p><p>Not just that, but social freedoms are important too. If we cannot remain an open, tolerant, democratic society, then how could we ever hope to move forward in a way that benefits the <b>majority</b>, not the few richmen.</p><div class=card><h3>Free Software</h3><p>I am, personally, a major supporter of free software, often helping to advocate for its use and advancement, and attempting to encourage and congratulate those expanding companies who see the potential in free software and take advantage of the benefits that a free world does afford (of course, I’m not talking about cost here -- I mean free as in freedom: libera).</p><p>It’s partly for this reason that you’ll see that most of my projects are licensed under the GNU General Public License -- a free license. In fact, the source code of the page you’re reading right now is licensed under that very one!</p><p>I also happen to support Edward Snowden, of whom I have immense sympathy for his unjust situation of being in exile from the very country he aided in the revelation of secretive spying being enacted by the US Government, for years, without notice. If a country does not trust its citizens, then how can the citizens trust the country?</p></div><div class=card><h3>Deceitful democracy</h3><p>Each, and every, day, you are being deceived. Now, no, I’m not a conspiracy theorist, but this is real: <b>you do not live in a democracy</b>. A democracy is, technically speaking, direct “power to the people”, as opposed to indirect power through a semi-frequent electoral system, which themselves have been found to be rigged numerous crucial times in the past. Consider that once you’ve voted, your power ends: you have no say in the House of Commons, the House of Lords, or Buckingham Palace. Once a leader is elected, that person operates as a <i>democratically-elected dictator</i>. True democracy requires a complete upheavel of the governmental system, and isn’t something you will see soon. But just remember: you do not live in a democracy. Not a true one, anyway -- no matter what your friends naively believe.</p></div><div class=card><h3>Progressivism</h3><q>You do you, boo.</q><p>Personally, I would describe myself as a mild progressive. That is to say, I support all sexualities (aye, that includes demisexuality, pansexuality, and such), I have no issues with transexuals, and thus am rather progressive. However, having said that, the topic of genders is a slightly more acute topic, noting that the Oxford English Dictionary defines genders as “the state of being male or female (typically used with reference to social and cultural differences rather than biological ones)”.</p><p>This definition suggests that genders are, themselves, <i>intended to be assumed</i>. Now, that's not to say that I'm going to just assume everyone's genders - I have more respect than that. But it does also suggest that, realistically, there are only two genders as described by the explicit definition: male and female. My opinion on this topic focuses very much on the dictionary's stance.</p><p>On all other topics, it's generally safe to assume a progressive stance to my opinions. Genders simply remain an "under consideration" topic for me.</p></div></div><div class=modal id=ukpol><div><button class=close onclick="hideModal('ukpol')">X</button></div><h2>Some of my opinions: UK Politics</h2><div class=card><h3>‘Brexit’ (British EU Exit)</h3><p>This is a controversial topic, but it needs addressing. The short summary of my beliefs is that I am a ‘Remainer’, but I’ve always tried, all throughout the entire Brexit campaign, to maintain an open and unbiased mindview as possible. Sadly, however, I fail to see the benefits that are afforded through leaving the single largest collection of trade partners and like-minded countries that ever did exist. My arguments relate moreso towards the future, than necessarily the present.</p><p>Think of every single sci-fi book or film that handles the future. They all seem to suggest that we would be operating under a unified race, a World Government, as it were. The EU, and the EU’s goals, would have brought us so much closer to this utopian future, supported by the democratic ratification process. Oh, wait, I just called the EU democratic, didn’t I? Gods forbid! No matter what side you're on, that fact is true: all decisions are ratified through each independant member state. That is democracy, not a dictatorship as Mr. Farage made it out to be.</p><p>Furthermore, both our military and our trade agreements benefit from the EU. Simply look at the value of the pound -- and <b>we haven’t even left the EU yet!</b> For as long as we continue plummeting towards a ‘Hard Brexit’, this country’s future is uncertain.</p></div><div class=card><h3>UK Liberal Democrats</h3><p>The Liberal Democrats (LibDems) are the modern-day Labour party: rather than fighting amongst each other and backing on their word, they fight to keep Britain “open, tolerant, and united”.</p><p>With Tim Farron, a Member of Parliament who repeatedly demonstrates his dedication to his cause and care for the working class (even being described as “an ally of farmers” by the NFU), being elected twice thus far as the LibDem leader, it shouldn’t be much of a surprise to learn that only the LibDems voted <b>completely</b> as a party against the Investigatory Powers Act 2016 in the House of Commons. They fight for the future I want, for unity, openness, and tolerance. Do you want division in your future?</p></div></div><div class=modal id=uspol><div><button class=close onclick="hideModal('uspol')">X</button></div><h2>Some of my opinions: US Politics</h2><p>Contrary to popular belief, I do not have my head under a rock. Rather, I had been watching intently the relatively recent US Presidential Election, of which President Donald Trump clearly won. In terms of my opinion, neither candidate for the White House was acceptable: President Trump’s obligations are, quite clearly, centered more on his business than they are on the Presidency (a business he seems to be unwilling to give up, according to him claim that “the public knew of his business when they voted him”), and, as a businessman, he’s already been proven to be corrupt, foolish, and manipulative -- so, ultimately, unfit for the role that he's been granted.</p><p>On the other hand, Democratic candidate Hillary Clinton was also an unfit candidate for the Opal Office, noting her disregard for national security in storing her emails on a private server -- which, based on the leaks provided by WikiLeaks, aren’t inclined to support her cause -- was clearly not suited for the Presidential seat.</p><p>To my own opinion, the only acceptable options were Bernie Sanders, or Jill Stein of the US Green Party. Though, sadly, neither of these candidates won.</p><div class=card><p>With regards to the executive order that was enacted Saturday 28<sup>th</sup> January 2017, my heart does go out to every US Citizen that was affected by the order, and it proves just how unfit President Trump is to rule, opting to shut out people who’d already been granted visas, after extreme vetting already. Consider the danger those people may have been in in their home countries, which President Trump has renewed? Or the hundreds of Google employees confirmed to be stranded outside of the US (despite Sundar Pichai’s best efforts)? As it is, I stand with everyone harmed, stranded, and cut off from their family as a direct consequence of the President’s ruling, and, should you need someone to talk to, know that I am here regardless.</p></div></div><noscript id=deferred-styles><link href=https://fonts.googleapis.com/css?family=Roboto rel=stylesheet></noscript><script>
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred-styles");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
-    </script><script async src=res/js/jquery-3.1.1.min.js></script><script async src=res/js/script.js></script></body></html>
+          </div> -->
+
+          <div class="col s6">
+            <div style="">
+              <div id="websites">
+                <h5 class="white-text">Games</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="images/latitude.png">
+
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue lighten-1" href="https://lyrenhex.itch.io/latitude" target="_blank"><i class="material-icons">open_in_new</i></a>
+              </div>
+              <div class="card-content"><span class="card-title">Latitude</span>
+                <p>Latitude was a spur-of-the-moment infinite platformer, in which you control a square and have limited boost, which can be restocked using a refill mechanic (in which you gain a refill per completed level), or by landing on a platform. Each level is ~10% more difficult than the previous. Should you fall to your death, it's game over. This game was built using Python, using the pygame library.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Version -->
+    <div id="rowMainMobile" class="row hide-on-large-only">
+
+      <!-- The entire column -->
+      <div id="mainColumnMobile" class="col s12">
+
+        <img id="profileImageMobile" src="images/icon.png" class="circle responsive-img" />
+        <h4 class="white-text center-align">Damian Heaton</h4>
+        <h2 id="description" class="white-text center-align">Web and software developer, musicophile, student.</h2>
+
+
+        <div id="linkSection">
+          <section class="tab" id="linkSection">
+            <div class="content" id="linkContent">
+              <div class="contacts" id="contacts"><a href="mailto:damian@lyrenhex.me" class="white-text valign-wrapper" target="_blank"><i class="contact_icon mdi mdi-email"></i>&nbsp; Mail</a></div>
+              <div class="contacts" id="contacts"><a href="https://twitter.com/lyrenhex/" class="white-text valign-wrapper"><i class="contact_icon mdi mdi-twitter"></i>&nbsp; Twitter</a></div>
+              <div class="contacts" id="contacts"><a href="https://blog.lyrenhex.me" class="white-text valign-wrapper" target="_blank"><i class="contact_icon mdi mdi-tumblr"></i>&nbsp; Blog</a></div>
+              <div class="contacts" id="contacts"><a href="https://google.com/+DamianHeaton" class="white-text valign-wrapper" target="_blank"><i class="contact_icon mdi mdi-google-plus"></i>&nbsp; Google+</a></div>
+              <!-- You can add more links! -->
+            </div>
+          </section>
+        </div>
+
+        <!-- The Works Column -->
+        <div id="worksColumnMobile">
+
+          <h4 style="margin-top: 0px;" class="white-text center-align">Portfolio</h4>
+
+
+          <div id="websites" data-target="websites">
+            <h5 class="white-text center-align" style="margin-bottom: 20px;">Software</h5>
+          </div>
+
+          <!-- Items -->
+          <div class="card">
+            <div class="card-image">
+              <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue lighten-1" href="https://github.com/Lyrenhex/Wilted" target="_blank"><i class="material-icons">open_in_new</i></a>
+            </div>
+            <div class="card-content"><span class="card-title">Wilted</span>
+              <p>A scrobbler written in NodeJS for <a href="https://wilt.fm" target="_blank">What I Listen To</a>, allowing users of the Google Play Music Desktop Player to record their listening history on WILT.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue lighten-1" href="https://verum.damianheaton.com" target="_blank"><i class="material-icons">open_in_new</i></a>
+            </div>
+            <div class="card-content"><span class="card-title">Verum</span>
+              <p>A websocket-based encrypted communication network protocol, featuring: a decentralised server node program; a client-and-server-friendly NPM package; a command-line client. The protocol was based on the OpenPGP key standard.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue lighten-1" href="https://github.com/Lyrenhex/Compound" target="_blank"><i class="material-icons">open_in_new</i></a>
+            </div>
+            <div class="card-content"><span class="card-title">Compound</span>
+              <p>Compound is a command-line based HTML transclusion compiler written in Python, which added transclusion syntax to the base HTML language, before allowing for automated compilation down to standard browser-friendly HTML.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue lighten-1" href="https://ave.damianheaton.com" target="_blank"><i class="material-icons">open_in_new</i></a>
+            </div>
+            <div class="card-content"><span class="card-title">Ave</span>
+              <p>Ave (named after the Latin greeting) is a material design-based IRC client built using Electron. It has support for most common functions of IRC, particularly focused on new members of the IRC community, and valuing GUI over CLI.</p>
+            </div>
+          </div>
+
+
+          <!--
+            <div style="">
+              <div id="websites">
+                <h5 class="white-text">Web Applications</h5>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="images/placeholder.jpeg">
+
+                <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue lighten-1" href="" target="_blank"><i class="material-icons">open_in_new</i></a>
+              </div>
+              <div class="card-content"><span class="card-title">Title 1</span>
+                <p>Text detailing this accomplishment or work that you completed.</p>
+              </div>
+            </div>-->
+
+          <div id="websites">
+            <h5 class="white-text">Games</h5>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="images/latitude.png">
+
+              <a class="btn-floating btn-large halfway-fab waves-effect waves-light blue lighten-1" href="https://lyrenhex.itch.io/latitude" target="_blank"><i class="material-icons">open_in_new</i></a>
+            </div>
+            <div class="card-content"><span class="card-title">Latitude</span>
+              <p>Latitude was a spur-of-the-moment infinite platformer, in which you control a square and have limited boost, which can be restocked using a refill mechanic (in which you gain a refill per completed level), or by landing on a platform. Each level is ~10% more difficult than the previous. Should you fall to your death, it's game over. This game was built using Python, using the pygame library.</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
