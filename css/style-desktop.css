@@ -1,12 +1,13 @@
-.bio {
+.info {
   position: fixed;
   left: 30px;
   display: inline-block;
   margin: 0;
   text-align: center;
   float: left;
+  height: 100%;
+  overflow: auto;
 }
-
 .portfolio {
   float: right;
   width: calc(100% - 600px);

@@ -8,8 +8,8 @@
 }
 
 body {
-  background-color: #03a9f4;
-  color: #eef;
+  background-color: #5ebfff;
+  color: #000;
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
@@ -17,30 +17,56 @@ body {
 h1 {
   font-family: 'Spectral', serif;
 }
+h1, h2, h3 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
 
-.bio img {
+.info img {
   border-radius: 50%;
   box-shadow: 0 10px 20px 0 #000;
   width: 200px;
   max-width: 100%;
   margin-top: calc(10%);
 }
-.bio h1 {
+.info h1 {
   margin-bottom: 0;
   font-size: 2.28rem;
 }
-.bio h2 {
+.info h2 {
   margin-top: 0;
   font-size: 1.3rem;
 }
-.bio .links .link {
+.info .links {
+  display: block;
+  margin: auto;
+  max-width: 460px;
+}
+.info .links .link {
   display: inline-block;
-  margin: 0 20px;
+  margin: 5px 20px;
   font-size: 16px;
 }
-.bio .links .link a {
-  color: #eee;
+.info .links .link a {
+  color: #000;
   text-decoration: none;
+  font-size: 18px;
+}
+
+.info .freelance {
+  display: block;
+  margin: auto;
+  max-width: 460px;
+  font-size: 18px;
+}
+.info .freelance h3 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.info .disclaimer {
+  font-size: 12px;
+  font-family: 'Spectral', sans-serif;
+  margin: 7px auto;
 }
 
 .portfolio h2 {
